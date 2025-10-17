@@ -35,9 +35,9 @@ export default function Header() {
               <Phone size={14} />
               <span className="hidden sm:inline">+242 06 892 90 95</span>
             </a>
-            <a href="tel:+242066943909" className="flex items-center gap-1.5 hover:opacity-90 transition-opacity">
+            <a href="tel:+242056943909" className="flex items-center gap-1.5 hover:opacity-90 transition-opacity">
               <Phone size={14} />
-              <span className="hidden sm:inline">+242 06 694 39 09</span>
+              <span className="hidden sm:inline">+242 06 594 39 09</span>
             </a>
             <a href="mailto:contact@exitravels.com" className="flex items-center gap-1.5 hover:opacity-90 transition-opacity">
               <Mail size={14} />

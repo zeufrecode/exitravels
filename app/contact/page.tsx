@@ -11,7 +11,7 @@ const contactInfo = [
   {
     icon: Phone,
     title: "Téléphone",
-    details: ["+242 06 892 90 95", "+242 06 694 39 09"],
+    details: ["+242 06 892 90 95", "+242 05 694 39 09"],
   },
   {
     icon: Mail,
@@ -168,7 +168,7 @@ export default function ContactPage() {
 
               {/* WhatsApp */}
               <Link
-                href="https://wa.me/243971234567"
+                href="https://wa.me/242068929095"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-3 w-full 
