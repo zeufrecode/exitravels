@@ -1,0 +1,8 @@
+[
+  {"name":"Charles de Gaulle","city":"Paris","country":"France","iata":"CDG"},
+  {"name":"Orly","city":"Paris","country":"France","iata":"ORY"},
+  {"name":"Heathrow","city":"London","country":"UK","iata":"LHR"},
+  {"name":"JFK","city":"New York","country":"USA","iata":"JFK"},
+  {"name":"Los Angeles","city":"Los Angeles","country":"USA","iata":"LAX"},
+  {"name":"Brazzaville","city":"Los Angeles","country":"USA","iata":"LAX"}
+]

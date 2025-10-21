@@ -43,6 +43,17 @@ const allDestinations = [
       "Lomé vous séduira par sa tranquillité, ses plages désertes et son charme colonial. Une destination idéale pour découvrir l’Afrique sans stress, avec style et authenticité.",
   },
   {
+    title: "Douala, Camaeroun",
+    duration: "5 nuits / 6 jours",
+    price: "2,200",
+    rating: 4.7,
+    image: "/destinations/maroc.jpg", // ← à remplacer par ton image
+    description: "Modernité et tradition se rencontrent dans cette métropole méditerranéenne.",
+    highlights: ["Hassan II Mosque", "Corniche", "Souks animés"],
+    longDescription:
+      "Casablanca mêle architecture coloniale, mosquées majestueuses et vie nocturne vibrante. Découvrez la face moderne du Maroc, entre mer, culture et saveurs authentiques.",
+  },
+  {
     title: "Dubai, Émirats Arabes Unis",
     duration: "5 nuits / 6 jours",
     price: "2,800",
@@ -63,6 +74,17 @@ const allDestinations = [
     highlights: ["Tour Eiffel", "Louvre", "Seine en croisière"],
     longDescription:
       "Paris, c’est plus qu’une destination — c’est un rêve. Flânez sur les Champs-Élysées, dégustez un croissant au petit matin, admirez la Seine au coucher du soleil. Magique.",
+  },
+  {
+    title: "Casablanca, Maroc",
+    duration: "5 nuits / 6 jours",
+    price: "2,200",
+    rating: 4.7,
+    image: "/destinations/maroc.jpg", // ← à remplacer par ton image
+    description: "Modernité et tradition se rencontrent dans cette métropole méditerranéenne.",
+    highlights: ["Hassan II Mosque", "Corniche", "Souks animés"],
+    longDescription:
+      "Casablanca mêle architecture coloniale, mosquées majestueuses et vie nocturne vibrante. Découvrez la face moderne du Maroc, entre mer, culture et saveurs authentiques.",
   },
   {
     title: "Casablanca, Maroc",

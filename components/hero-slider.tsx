@@ -6,12 +6,13 @@ import { ChevronLeft, ChevronRight, MapPin } from "lucide-react"
 const slides = [
   {
     id: 1,
-    title: "Musée de la Renaissance Africaine",
-    subtitle: "Histoire et culture",
-    description: "Découvrez le symbole emblématique de Dakar et plongez dans l’histoire africaine moderne",
-    image: "/destinations/dakar.jpg",
-    destination: "Dakar, Sénégal"
-  },
+    title: "Tours Jumelles de Brazzaville",
+    subtitle: "Architecture moderne et fierté nationale",
+    description: "Admirez les majestueuses Tours Jumelles de Brazzaville, symbole de modernité et de croissance en Afrique centrale. Ces gratte-ciels impressionnants offrent une vue panoramique sur la capitale congolaise.",
+    image: "/destinations/tour_4k_rectangle.png",
+    destination: "Brazzaville, Congo"
+  }
+  ,
   {
     id: 2,
     title: "Burj Khalifa",
@@ -43,6 +44,22 @@ const slides = [
     description: "Visitez Casablanca et admirez l'une des plus grandes mosquées du monde",
     image: "/destinations/casablanca.jpg",
     destination: "Casablanca, Maroc"
+  },
+  {
+    id: 6,
+    title: "Musée de la Renaissance Africaine",
+    subtitle: "Histoire et culture",
+    description: "Découvrez le symbole emblématique de Dakar et plongez dans l’histoire africaine moderne",
+    image: "/destinations/dakar.jpg",
+    destination: "Dakar, Sénégal"
+  },
+  {
+    id: 7,
+    title: "Musée de la Renaissance Africaine",
+    subtitle: "Histoire et culture",
+    description: "Découvrez le symbole emblématique de Dakar et plongez dans l’histoire africaine moderne",
+    image: "/destinations/kinshasa.png",
+    destination: "Dakar, Sénégal"
   },
 ]
 
@@ -92,9 +109,8 @@ export default function HeroSlider() {
       {slides.map((slide, index) => (
         <div
           key={slide.id}
-          className={`absolute inset-0 transition-all duration-800 ease-in-out ${
-            index === currentSlide ? "opacity-100 scale-100 z-10" : "opacity-0 scale-105 z-0"
-          }`}
+          className={`absolute inset-0 transition-all duration-800 ease-in-out ${index === currentSlide ? "opacity-100 scale-100 z-10" : "opacity-0 scale-105 z-0"
+            }`}
         >
           {/* Image + Overlay */}
           <div className="absolute inset-0 overflow-hidden">
@@ -114,11 +130,10 @@ export default function HeroSlider() {
           <div className="relative h-full container mx-auto px-4 flex items-center">
             <div className="max-w-3xl text-white">
               <div
-                className={`transition-all duration-1000 ${
-                  index === currentSlide
+                className={`transition-all duration-1000 ${index === currentSlide
                     ? "opacity-100 translate-y-0"
                     : "opacity-0 translate-y-10"
-                }`}
+                  }`}
               >
                 <div className="flex items-center gap-2 mb-4">
                   <MapPin className="h-5 w-5 text-[#FF9B4D]" />
@@ -175,11 +190,10 @@ export default function HeroSlider() {
           <button
             key={index}
             onClick={() => goToSlide(index)}
-            className={`transition-all duration-300 rounded-full ${
-              index === currentSlide
+            className={`transition-all duration-300 rounded-full ${index === currentSlide
                 ? "bg-[#FF9B4D] w-8 h-2"
                 : "bg-white/50 hover:bg-white/80 w-2 h-2"
-            }`}
+              }`}
             aria-label={`Aller au slide ${index + 1}`}
           />
         ))}

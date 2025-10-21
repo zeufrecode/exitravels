@@ -7,21 +7,22 @@ import { Button } from "@/components/ui/button"
 
 const featuredDestinations = [
   {
-    title: "Dakar, Sénégal",
+    title: "Brazzaville, Congo",
     rating: 4.9,
-    image: "/destinations/dakar.jpg",
+    image: "/destinations/bzv-img.png",
     description: "Capitale dynamique, plages dorées et culture vibrante au cœur de l'Afrique de l'Ouest.",
     longDescription:
       "Découvrez Dakar, une ville où l'océan rencontre la culture. Explorez ses marchés colorés, savourez son poulet yassa et laissez-vous emporter par son rythme unique.",
   },
   {
-    title: "Dubai, Émirats Arabes Unis",
-    rating: 4.8,
-    image: "/destinations/dubai.jpg",
-    description: "Luxueuse, futuriste et inoubliable — Dubai vous émerveille à chaque coin de rue.",
+    title: "Pointe-Noire, Congo",
+    rating: 4.7,
+    image: "/destinations/pn.jpg",
+    description: "Ville portuaire animée, plages splendides et ambiance cosmopolite sur la côte Atlantique.",
     longDescription:
-      "Vivez l’expérience ultime de luxe et d’aventure : du sommet du Burj Khalifa aux dunes dorées du désert, en passant par les fontaines magiques et les îles artificielles.",
+      "Découvrez Pointe-Noire, joyau de la côte congolaise. Profitez de ses plages dorées, explorez le marché central coloré, savourez les fruits de mer frais et laissez-vous séduire par l'énergie unique de cette ville portuaire.",
   },
+
   {
     title: "Paris, France",
     rating: 5.0,
@@ -53,7 +54,7 @@ export default function FeaturedDestinationsHariomStyle() {
 
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
 
-            
+
 
             {/* Contenu */}
             <div className="absolute bottom-0 left-0 right-0 p-6 text-white leading-relaxed">
@@ -70,13 +71,13 @@ export default function FeaturedDestinationsHariomStyle() {
                 {dest.longDescription}
               </p>
               <div className="flex flex-wrap gap-3">
-                 <a
-                        href="/contact"
-                        className="bg-white/20 hover:bg-white/30 backdrop-blur-sm text-white px-4 py-2 rounded-full text-sm font-medium transition-colors inline-block"
-                      >
-                        Contactez-Nous
-                      </a>
-                
+                <a
+                  href="/contact"
+                  className="bg-white/20 hover:bg-white/30 backdrop-blur-sm text-white px-4 py-2 rounded-full text-sm font-medium transition-colors inline-block"
+                >
+                  Contactez-Nous
+                </a>
+
               </div>
             </div>
           </motion.div>
@@ -87,9 +88,9 @@ export default function FeaturedDestinationsHariomStyle() {
       <div className="flex justify-center">
         <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
           <Link href="/destinations">
-           <button className="bg-[#ff781d] hover:bg-[#e0650f] text-white font-semibold text-lg px-10 py-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300">
-  Voir toutes les destinations
-</button>
+            <button className="bg-[#ff781d] hover:bg-[#e0650f] text-white font-semibold text-lg px-10 py-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300">
+              Voir toutes les destinations
+            </button>
           </Link>
         </motion.div>
       </div>

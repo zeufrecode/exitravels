@@ -1,5 +1,6 @@
 import Header from "@/components/header"
 import HeroSlider from "@/components/hero-slider"
+import FlightSearchForm from '@/components/FlightSearchForm';
 import AboutSection from "@/components/about-section"
 import ServicesSection from "@/components/services-section"
 import DestinationsSection from "@/components/destinations-section"
@@ -13,6 +14,7 @@ export default function Home() {
     <main className="min-h-screen">
       <Header />
       <HeroSlider />
+     <FlightSearchForm />
       <AboutSection />
       <ServicesSection />
       <DestinationsSection />
